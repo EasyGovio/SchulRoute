@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>SchulRoute | Bildungsweg leicht gemacht</title>
     <meta name="description" content="Almanya'da eğitim navigasyonu. Okul seçimi, kayıt süreçleri, dil desteği ve ücretsiz danışmanlık.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SchulRoute | Bildungsweg leicht gemacht">
+    <meta property="og:description" content="Almanya'da eğitim navigasyonu. Okul seçimi, kayıt süreçleri, dil desteği ve ücretsiz danışmanlık.">
+    <meta property="og:image" content="https://schulroute.de/og-image.jpg">
+    <meta property="og:url" content="https://schulroute.de">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SchulRoute">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SchulRoute | Bildungsweg leicht gemacht">
+    <meta name="twitter:description" content="Almanya'da eğitim navigasyonu.">
+    <meta name="twitter:image" content="https://schulroute.de/og-image.jpg">
+
     <style>
+        /* Tüm CSS aynen korundu (navy #04162E, green #2ECC71, ES5 uyumlu) */
         * {
             margin: 0;
             padding: 0;
@@ -25,7 +41,6 @@
             border-radius: 40px;
             overflow: hidden;
         }
-        /* Header */
         .header {
             display: flex;
             justify-content: space-between;
@@ -51,7 +66,26 @@
             color: #2ECC71;
             font-weight: 500;
         }
-        /* Hero */
+        .lang-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        .lang-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(46,204,113,0.3);
+            border-radius: 60px;
+            padding: 6px 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            color: white;
+        }
+        .lang-btn.active {
+            background: #2ECC71;
+            color: #04162E;
+            border-color: #2ECC71;
+        }
         .hero {
             padding: 32px 24px 24px 24px;
             text-align: left;
@@ -84,7 +118,63 @@
             display: inline-block;
             width: 24px;
         }
-        /* Form */
+        .stats-section {
+            margin: 20px 24px;
+        }
+        .stats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+        .stat-card {
+            background: rgba(46,204,113,0.1);
+            border-radius: 24px;
+            padding: 20px 16px;
+            text-align: center;
+            flex: 1;
+            min-width: 130px;
+            border: 1px solid rgba(46,204,113,0.3);
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #2ECC71;
+            line-height: 1.2;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: #cfdfe9;
+            margin-top: 6px;
+        }
+        .info-section {
+            margin: 20px 24px;
+        }
+        .info-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .info-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 18px 20px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            border-left: 4px solid #2ECC71;
+        }
+        .info-emoji {
+            font-size: 2rem;
+        }
+        .info-text {
+            flex: 1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .info-text strong {
+            color: #2ECC71;
+        }
         .beta-section {
             background: rgba(46,204,113,0.08);
             margin: 20px 24px 32px 24px;
@@ -144,7 +234,6 @@
             background: #27ae60;
             transform: scale(0.98);
         }
-        /* Footer */
         .footer {
             padding: 24px 24px 32px 24px;
             text-align: center;
@@ -175,8 +264,8 @@
                 width: auto;
                 padding: 14px 32px;
             }
-            .beta-section {
-                margin: 32px 32px 40px 32px;
+            .stats-grid {
+                flex-wrap: nowrap;
             }
         }
         @media (max-width: 400px) {
@@ -190,6 +279,9 @@
             .hero h1 {
                 font-size: 1.9rem;
             }
+            .stat-card {
+                min-width: 100px;
+            }
         }
     </style>
 </head>
@@ -198,27 +290,15 @@
     <div class="header">
         <div class="logo">Schul<span>Route</span></div>
         <div class="badge">PACDI | Eğitim Rehberi</div>
+        <div class="lang-buttons">
+            <button class="lang-btn" data-lang="tr">🇹🇷 TÜRKÇE</button>
+            <button class="lang-btn" data-lang="de">🇩🇪 DEUTSCH</button>
+            <button class="lang-btn" data-lang="en">🇬🇧 ENGLISH</button>
+        </div>
     </div>
-    <div class="hero">
-        <h1>Bildungsweg leicht gemacht</h1>
-        <ul class="feature-list">
-            <li>Okul seçimi rehberliği</li>
-            <li>Kayıt süreçleri adım adım</li>
-            <li>Dil desteği ve entegrasyon</li>
-            <li>Ücretsiz danışmanlık</li>
-        </ul>
-    </div>
-    <div class="beta-section">
-        <h3>Beta listesine katılın</h3>
-        <p>SchulRoute'u ilk deneyenlerden olun. Eğitim yolculuğunuzu kolaylaştırıyoruz.</p>
-        <form id="betaForm" onsubmit="return submitBeta(event)">
-            <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Adınız" required>
-                <input type="email" id="email" name="email" placeholder="E-posta adresiniz" required>
-                <button type="submit" class="btn-primary">Beta Listesine Katıl</button>
-            </div>
-        </form>
-    </div>
+    
+    <div id="dynamicContent"></div>
+
     <div class="footer">
         <p>© 2026 PACDI — schulroute.de</p>
         <p class="footer-note">Datenschutzfreundlich · Keine Speicherung</p>
@@ -226,18 +306,190 @@
 </div>
 
 <script>
+    // ES5 translations (içerik aynen korundu)
+    var translations = {
+        tr: {
+            heroTitle: "Bildungsweg leicht gemacht",
+            features: [
+                "Okul seçimi rehberliği",
+                "Kayıt süreçleri adım adım",
+                "Dil desteği ve entegrasyon",
+                "Ücretsiz danışmanlık"
+            ],
+            statsTitle: "Rakamlarla Almanya Eğitimi",
+            stats: [
+                { number: "38.000+", label: "Okul" },
+                { number: "11,4 Milyon", label: "Öğrenci (2025)" },
+                { number: "6 Belge", label: "Ortalama kayıt için" }
+            ],
+            didYouKnowTitle: "Bunu Biliyor muydun?",
+            cards: [
+                { emoji: "🔴", text: "<strong>Kızamık aşısı (Masernimpfung)</strong> okul kaydında ZORUNLUDUR. Aşısız çocuk okula kabul edilmez." },
+                { emoji: "📋", text: "Eyaletten eyalete kayıt süreci değişir. Berlin'de başvuru okul müdürlüğüne, Bavyera'da Schulamt'a yapılır." },
+                { emoji: "⏰", text: "2026'dan itibaren ilkokullarda <strong>tam gün eğitim (Vollzeitschulpflicht)</strong> kademeli olarak zorunlu hale geliyor." }
+            ],
+            betaTitle: "Beta listesine katılın",
+            betaDesc: "SchulRoute'u ilk deneyenlerden olun. Eğitim yolculuğunuzu kolaylaştırıyoruz.",
+            namePlaceholder: "Adınız",
+            emailPlaceholder: "E-posta adresiniz",
+            buttonText: "Beta Listesine Katıl"
+        },
+        de: {
+            heroTitle: "Bildungsweg leicht gemacht",
+            features: [
+                "Schulwahl-Beratung",
+                "Schritt-für-Schritt Anmeldung",
+                "Sprachunterstützung",
+                "Kostenlose Beratung"
+            ],
+            statsTitle: "Bildung in Deutschland in Zahlen",
+            stats: [
+                { number: "38.000+", label: "Schulen" },
+                { number: "11,4 Mio.", label: "Schüler (2025)" },
+                { number: "6 Dokumente", label: "im Schnitt für Anmeldung" }
+            ],
+            didYouKnowTitle: "Wussten Sie schon?",
+            cards: [
+                { emoji: "🔴", text: "Die <strong>Masernimpfung</strong> ist bei der Schuleinschreibung PFLICHT. Ungeimpfte Kinder werden nicht aufgenommen." },
+                { emoji: "📋", text: "Das Anmeldeverfahren variiert je nach Bundesland. In Berlin wendet man sich an die Schulleitung, in Bayern an das Schulamt." },
+                { emoji: "⏰", text: "Ab 2026 wird der <strong>Ganztagsanspruch in Grundschulen</strong> schrittweise verbindlich eingeführt." }
+            ],
+            betaTitle: "Beta-Liste beitreten",
+            betaDesc: "Seien Sie einer der Ersten, die SchulRoute nutzen. Wir begleiten Sie auf Ihrem Bildungsweg.",
+            namePlaceholder: "Ihr Name",
+            emailPlaceholder: "E-Mail-Adresse",
+            buttonText: "Beta-Liste beitreten"
+        },
+        en: {
+            heroTitle: "Your path to education, simplified",
+            features: [
+                "School selection guidance",
+                "Step-by-step registration",
+                "Language support",
+                "Free consultation"
+            ],
+            statsTitle: "German Education in Numbers",
+            stats: [
+                { number: "38,000+", label: "Schools" },
+                { number: "11.4 Million", label: "Students (2025)" },
+                { number: "6 Documents", label: "Average for enrollment" }
+            ],
+            didYouKnowTitle: "Did you know?",
+            cards: [
+                { emoji: "🔴", text: "<strong>Measles vaccination (Masernimpfung)</strong> is MANDATORY for school enrollment. Unvaccinated children are not admitted." },
+                { emoji: "📋", text: "The registration process varies by state. In Berlin, apply to the school principal; in Bavaria, to the Schulamt." },
+                { emoji: "⏰", text: "From 2026, <strong>all-day schooling (Vollzeitschulpflicht)</strong> in elementary schools will become gradually mandatory." }
+            ],
+            betaTitle: "Join the Beta List",
+            betaDesc: "Be among the first to experience SchulRoute. We'll help you navigate your education journey.",
+            namePlaceholder: "Your name",
+            emailPlaceholder: "Email address",
+            buttonText: "Join Beta List"
+        }
+    };
+
+    var currentLang = "tr";
+
+    function detectLanguage() {
+        var userLang = navigator.language || navigator.userLanguage;
+        if (userLang.indexOf("de") === 0) return "de";
+        if (userLang.indexOf("en") === 0) return "en";
+        return "tr";
+    }
+
+    function renderContent(lang) {
+        var t = translations[lang];
+        if (!t) return;
+
+        var statsHtml = '<div class="stats-section">' +
+            '<h2 style="font-size:1.3rem; margin-bottom:16px;">📊 ' + t.statsTitle + '</h2>' +
+            '<div class="stats-grid">';
+        for (var i = 0; i < t.stats.length; i++) {
+            statsHtml += '<div class="stat-card">' +
+                '<div class="stat-number">' + t.stats[i].number + '</div>' +
+                '<div class="stat-label">' + t.stats[i].label + '</div>' +
+                '</div>';
+        }
+        statsHtml += '</div></div>';
+
+        var infoHtml = '<div class="info-section">' +
+            '<h2 style="font-size:1.3rem; margin-bottom:16px;">💡 ' + t.didYouKnowTitle + '</h2>' +
+            '<div class="info-cards">';
+        for (var j = 0; j < t.cards.length; j++) {
+            infoHtml += '<div class="info-card">' +
+                '<div class="info-emoji">' + t.cards[j].emoji + '</div>' +
+                '<div class="info-text">' + t.cards[j].text + '</div>' +
+                '</div>';
+        }
+        infoHtml += '</div></div>';
+
+        var featureItems = '';
+        for (var k = 0; k < t.features.length; k++) {
+            featureItems += '<li>' + t.features[k] + '</li>';
+        }
+
+        var heroHtml = '<div class="hero">' +
+            '<h1>' + t.heroTitle + '</h1>' +
+            '<ul class="feature-list">' + featureItems + '</ul>' +
+            '</div>';
+
+        var formHtml = '<div class="beta-section">' +
+            '<h3>📧 ' + t.betaTitle + '</h3>' +
+            '<p>' + t.betaDesc + '</p>' +
+            '<form id="betaForm" onsubmit="return submitBeta(event)">' +
+            '<div class="form-group">' +
+            '<input type="text" id="name" name="name" placeholder="' + t.namePlaceholder + '" required>' +
+            '<input type="email" id="email" name="email" placeholder="' + t.emailPlaceholder + '" required>' +
+            '<button type="submit" class="btn-primary">' + t.buttonText + '</button>' +
+            '</div>' +
+            '</form>' +
+            '</div>';
+
+        var fullHtml = heroHtml + statsHtml + infoHtml + formHtml;
+        document.getElementById("dynamicContent").innerHTML = fullHtml;
+
+        var btns = document.querySelectorAll('.lang-btn');
+        for (var i = 0; i < btns.length; i++) {
+            if (btns[i].getAttribute('data-lang') === lang) {
+                btns[i].classList.add('active');
+            } else {
+                btns[i].classList.remove('active');
+            }
+        }
+    }
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        renderContent(lang);
+    }
+
     function submitBeta(event) {
         event.preventDefault();
         var nameInput = document.getElementById('name');
         var emailInput = document.getElementById('email');
         if (nameInput && emailInput && nameInput.value.trim() !== '' && emailInput.value.trim() !== '') {
-            alert('Teşekkürler! Size ulaşacağız.');
+            var t = translations[currentLang];
+            alert(t.buttonText === "Beta Listesine Katıl" ? "Teşekkürler! Size ulaşacağız." :
+                  (currentLang === "de" ? "Vielen Dank! Wir melden uns." : "Thank you! We'll be in touch."));
             nameInput.value = '';
             emailInput.value = '';
         } else {
-            alert('Lütfen adınızı ve e-posta adresinizi giriniz.');
+            alert(currentLang === "tr" ? "Lütfen adınızı ve e-posta adresinizi giriniz." :
+                  (currentLang === "de" ? "Bitte geben Sie Ihren Namen und Ihre E-Mail-Adresse ein." :
+                   "Please enter your name and email address."));
         }
         return false;
+    }
+
+    var initialLang = detectLanguage();
+    setLanguage(initialLang);
+
+    var langBtns = document.querySelectorAll('.lang-btn');
+    for (var i = 0; i < langBtns.length; i++) {
+        langBtns[i].addEventListener('click', function(e) {
+            var lang = this.getAttribute('data-lang');
+            setLanguage(lang);
+        });
     }
 </script>
 </body>
