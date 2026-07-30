@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wahlkreise Pankow — Berlin Wahl 2026 | SchulRoute</title>
-<meta name="description" content="Alle 9 Wahlkreise im Bezirk Pankow für die Wahl zum 20. Abgeordnetenhaus von Berlin am 20. September 2026 — mit Grenzverlauf und Kurzbeschreibung.">
+<meta name="description" content="Alle 9 Wahlkreise im Bezirk Pankow für die Wahl zum 20. Abgeordnetenhaus von Berlin am 20. September 2026 — mit Grenzverlauf, Kurzbeschreibung und allen Schulen je Wahlkreis.">
 <link rel="canonical" href="https://schulroute.de/wahlkreise/pankow.html">
 <style>
 * { box-sizing: border-box; }
@@ -27,61 +27,19 @@ h1 { color:#F6B45F; font-size:1.5rem; margin-bottom:4px; }
 .wk-card .kurz { color:#eaf2fb; font-size:0.95rem; margin-bottom:10px; }
 .wk-card details summary { color:#7a9ab8; cursor:pointer; font-size:0.82rem; }
 .wk-card details p { color:#8aa0bc; font-size:0.82rem; margin-top:8px; }
+.schools-toggle { color:#F6B45F; font-size:0.82rem; cursor:pointer; margin-top:10px; display:inline-block; }
+.schools-list { display:none; margin-top:10px; border-top:1px solid rgba(246,180,95,0.1); padding-top:10px; }
+.schools-list.open { display:block; }
+.school-item { padding:8px 0; border-bottom:1px solid rgba(246,180,95,0.06); font-size:0.85rem; }
+.school-item .sname { color:#eaf2fb; font-weight:600; }
+.school-item .styp { color:#F6B45F; font-size:0.72rem; }
+.school-item .saddr { color:#7a9ab8; font-size:0.78rem; }
 .back-link { display:inline-block; margin-bottom:16px; color:#7a9ab8; text-decoration:none; font-size:0.85rem; }
 .back-link:hover { color:#F6B45F; }
 .footer-note { text-align:center; color:#6a80a0; font-size:0.75rem; margin-top:30px; }
 </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6ML8EDW0H"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-E6ML8EDW0H");</script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8426936740213369" crossorigin="anonymous"></script>
-    <link rel="manifest" href="/manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="PACDI">
-    <script>
-(function(){
-  if (sessionStorage.getItem('autoLang')) return;
-  var bl = (navigator.language || navigator.userLanguage || 'en').substring(0,2).toLowerCase();
-  var supported = ['tr','de','en'];
-  var lang = supported.indexOf(bl) > -1 ? bl : 'en';
-  sessionStorage.setItem('autoLang', lang);
-})();
-</script>
-    <script>
-(function(){
-  var params = new URLSearchParams(window.location.search);
-  if (params.get('beta') === 'pacdi2026') {
-    try { sessionStorage.setItem('betaUnlock', '1'); } catch(e) {}
-  }
-  window.isBetaUnlocked = function() {
-    try { return sessionStorage.getItem('betaUnlock') === '1'; } catch(e) { return false; }
-  };
-})();
-</script>
-    <style>
-    .pacdi-share-bar{margin-top:24px;padding:16px;background:rgba(246,180,95,0.05);border:1px solid rgba(246,180,95,0.15);border-radius:10px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,sans-serif;box-sizing:border-box;}
-    .pacdi-share-label{font-size:0.8rem;color:#7a9ab8;margin-bottom:10px;font-weight:600;}
-    .pacdi-share-btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
-    .pacdi-share-btn{display:inline-flex;align-items:center;gap:4px;font-size:0.78rem;padding:7px 14px;border-radius:20px;border:1px solid rgba(246,180,95,0.3);background:transparent;color:#F6B45F;text-decoration:none;cursor:pointer;font-family:inherit;}
-    .pacdi-share-btn:hover{background:rgba(246,180,95,0.1);}
-    </style>
 </head>
 <body>
-<!--
-╬═══════════════════════════════════════════════════════════════╮
-║         🛡️  PACDI FRAMEWORK — PROTECTED WORK                  ║
-║                                                               ║
-║  © 2026 PACDI Global Yazılım Ltd. Şti.                       ║
-║  FSEK Registration No : 2026/18897                            ║
-║  Trade Registry      : 23836 · Yunusemre / Manisa, TR       ║
-║                                                               ║
-║  This work and its modular software architecture are          ║
-║  protected under PACDI Software Library FSEK registration.   ║
-║  Unauthorized copying is subject to legal action.            ║
-║                                                               ║
-║  pacdi.eu · pacdi.de · info@pacdi.eu                         ║
-╠═══════════════════════════════════════════════════════════════╣
--->
-
 <header>
   <a href="/wahlkreise/" class="logo">🗳️ SchulRoute</a>
   <button class="menu-btn" onclick="document.getElementById('sideMenu').classList.toggle('open')">☰ Bezirke</button>
@@ -105,195 +63,666 @@ h1 { color:#F6B45F; font-size:1.5rem; margin-bottom:4px; }
 <div class="container">
   <a href="/wahlkreise/" class="back-link">← Alle Bezirke / Suche</a>
   <h1>Wahlkreise Pankow</h1>
-  <div class="sub">9 Wahlkreise für die Wahl zum 20. Abgeordnetenhaus von Berlin am 20. September 2026</div>
+  <div class="sub">9 Wahlkreise für die Wahl zum 20. Abgeordnetenhaus von Berlin am 20. September 2026 — inkl. aller Schulen je Wahlkreis</div>
   
-  <div class="wk-card">
+  <div class="wk-card" id="wk1">
     <h2>Wahlkreis 1</h2>
     <div class="kurz">Buch, Karow, Französisch Buchholz</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab nördlicher Landesgrenze Berlin/Brandenburg - östliche Landesgrenze - Ortsteilgrenze Stadtrandsiedlung Malchow - Ortsteilgrenze Blankenburg - Ortsteilgrenze Französisch Buchholz entlang BAB 114 bis Fischteiche - nördlich bis Grenze Anlage Blankenburg - Panke nördlich bis Pankebecken - Nordgraben bis Nisbléstraße - Chartronstraße - Blankenfelder Straße bis Kalvinistenweg - nördlich bis Cunistraße - nordwestlich bis Rosenthaler Weg - nordöstlich bis Mühlenstraße - nordwestlich bis Clementweg - entlang Anlage Am Feldweg bis Krugpfuhlweg - nordwestlich bis Grenzweg - südwestlich bis Straße 124/123 bis Ortsteilgrenze Blankenfelde - B109 Schönerlinder Straße nördlich bis BAB 10 - nordwestlich bis Landesgrenze.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-1" data-label="📚 11 Schulen anzeigen">📚 11 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-1">
+      <div class="school-item">
+        <div class="sname">Grundschule am Hohen Feld</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Bedeweg 1, 13125 Berlin · <a href="http://grundschule-amhohenfeld.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule Alt-Karow</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Bahnhofstraße 32, 13125 Berlin · <a href="https://grundschule-alt-karow.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule im Panketal</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Achillesstraße 31, 13125 Berlin · <a href="http://www.grundschule-im-panketal.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule Am Sandhaus</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Wiltbergstraße 37, 13125 Berlin · <a href="https://gs-am-sandhaus.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Jeanne-Barez-Schule (Grundschule)</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Hauptstraße 66, 13127 Berlin · <a href="http://www.jeanne-barez-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Campus Buch</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Ernst-Ludwig-Heim-Straße 14, 13125 Berlin · <a href="https://www.03g50.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Hufeland-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Walter-Friedrich-Straße 18, 13125 Berlin · <a href="https://www.hufelandschule.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Montessori-Gemeinschaftsschule Berlin Buch</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Wiltbergstraße 90, 13125 Berlin · <a href="https://www.montessori-berlin-buch.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Evangelische Schule Berlin Buch (Grundschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Wiltbergstraße 50, 13125 Berlin · <a href="http://www.ev-schule-buch.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Marianne-Buggenhagen-Schule</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Ernst-Busch-Straße 29, 13125 Berlin · <a href="https://www.buggenhagen-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Robert-Havemann-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Achillesstraße 79, 13125 Berlin · <a href="http://www.robert-havemann-gymnasium.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk2">
     <h2>Wahlkreis 2</h2>
     <div class="kurz">Blankenfelde, Rosenthal, Wilhelmsruh, Niederschönhausen-Nord</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab Bezirksgrenze Reinickendorf - Landesgrenze bis BAB A10 - südöstlich bis B109 - Schönerlinder Straße bis Ortsteilgrenze Französisch Buchholz - bis Straße 124 - Grenzweg bis Krugpfuhlweg - entlang Anlage Am Feldweg bis Clémentweg - südöstlich bis Mühlenstraße - Rosenthaler Weg bis Cunistraße - bis Kalvinistenweg - bis Blankenfelder Straße - bis Chartronstraße - Nisbléstraße - bis Ortsteilgrenze Blankenfelde - Anlage Ostsee/Rügen - bis Schönhauser Straße - Buchholzer Straße bis Charlottenstraße - bis Beuthstraße - westlich bis Dietzgenstraße - südlich - Hermann-Hesse-Straße bis Bezirksgrenze Reinickendorf.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-2" data-label="📚 12 Schulen anzeigen">📚 12 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-2">
+      <div class="school-item">
+        <div class="sname">Berufliche Schule für Sozialwesen Pankow</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Erbeskopfweg 6, 13158 Berlin · <a href="https://www.schule-sozialwesen-pankow.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Konrad-Zuse-Schule</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Hermann-Hesse-Straße 34, 13156 Berlin · <a href="https://www.konrad-zuse-schule-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule in Rosenthal</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Kastanienallee 59, 13158 Berlin · <a href="https://www.grundschule-rosenthal.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Hasengrund-Schule (Grundschule)</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Hermann-Hesse-Straße 48, 13156 Berlin · <a href="https://hasengrund-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule an den Buchen</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Wilhelm-Wolff-Straße 19, 13156 Berlin · <a href="http://www.gs-buchen.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Platanengrundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Hauptstraße 20, 13159 Berlin · <a href="https://www.platanengrundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schule am Birkenhof</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Arnouxstraße 18, 13127 Berlin · <a href="http://www.schule-am-birkenhof.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule Wilhelmsruh</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Lessingstraße 44, 13158 Berlin · <a href="http://www.grundschule-wilhelmsruh.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Freie Naturschule im StadtGUT (Grundschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Hauptstraße 26, 13159 Berlin · <a href="http://www.freie-naturschule-stadtgut.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schule am Birkenhof</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Arnouxstraße 18, 13127 Berlin · <a href="http://www.schule-am-birkenhof.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Max-Delbrück-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Kuckhoffstraße 2, 13156 Berlin · <a href="https://max-delbrueck-gymnasium.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Inge-Deutschkron-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Kopenhagener Straße 83, 13158 Berlin · <a href="https://www.idg.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk3">
     <h2>Wahlkreis 3</h2>
     <div class="kurz">Pankow-Nord, Niederschönhausen-Süd, Französisch Buchholz-West</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab Bahnbereich Ortsteilgrenze Prenzlauer Berg - westlich bis Bezirksgrenze Mitte/Reinickendorf - nördlich bis Hermann-Hesse-Straße - Dietzgenstraße nördlich bis Beuthstraße - Charlottenstraße südlich bis Buchholzer Straße - nördlich bis Schönhauser Straße - nordwestlich Anlage Rügen/Ostsee bis Ortsteilgrenze Blankenfelde - Nordgraben bis Pankebecken - Panke südlich bis Anlage Blankenburg - Fischteiche bis BAB 114 nördlich bis Grünkardinalweg - Ortsteilgrenze Blankenburg/Heinersdorf bis Heimdallstraße - Bahnbereich bis Ortsteilgrenze Prenzlauer Berg.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-3" data-label="📚 17 Schulen anzeigen">📚 17 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-3">
+      <div class="school-item">
+        <div class="sname">Arnold-Zweig-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Wollankstraße 131, 13187 Berlin · <a href="https://www.arnold-zweig-grundschule.com" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Elizabeth-Shaw-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Grunowstraße 17, 13187 Berlin · <a href="https://esg.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Mendel-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Stiftsweg 3, 13187 Berlin · <a href="https://www.mendel-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Elisabeth-Christinen-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Buchholzer Straße 3, 13156 Berlin · <a href="https://ecg.schule" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">47. Schule (Grundschule)</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Mendelstraße 54, 13187 Berlin · <a href="https://schuleanderstrauchwiese.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">51. Schule (Grundschule)</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Lindenberger Straße 12, 13156 Berlin</div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Konrad-Duden-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Rolandstraße 35, 13156 Berlin · <a href="https://www.isskd.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Reinhold-Burger-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Neue Schönholzer Straße 32, 13187 Berlin · <a href="https://www.reinhold-burger-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Evangelische Schule Pankow (Grundschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Galenusstraße 60A, 13187 Berlin · <a href="http://www.ev-schule-pankow.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Freie Schule Pankow (Integrierte Sekundarschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Grabbeallee 66, 13156 Berlin · <a href="https://www.freie-schule-pankow.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">SchuleEins (Gemeinschaftsschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Berliner Straße 120, 13187 Berlin · <a href="https://pankowerfruechtchen.de/schuleeins" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Freie Integrative Montessori Grundschule Pankow</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Hadlichstraße 2, 13187 Berlin · <a href="http://www.montessori-pädagogik-pankow.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Platanus Schule Berlin (Gemeinschaftsschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Berliner Straße 12, 13187 Berlin · <a href="https://www.platanus-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Freie Humanistische Grundschule</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Grabbeallee 36, 13156 Berlin · <a href="https://www.humanistisch.de/freie-humanistische-grundschule" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Panke-Schule</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Galenusstraße 64, 13187 Berlin · <a href="http://www.panke-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schule an der Strauchwiese</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Mendelstraße 54, 13187 Berlin · <a href="http://www.schuleanderstrauchwiese.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Carl-von-Ossietzky-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Görschstraße 42, 13187 Berlin · <a href="https://cvo.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk4">
     <h2>Wahlkreis 4</h2>
     <div class="kurz">Weißensee-Nord, Stadtrandsiedlung Malchow, Blankenburg</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab nordöstlicher Landesgrenze - Bezirksgrenze Lichtenberg - Indira-Gandhi-Straße nördlich bis Berliner Allee - westlich bis Pistoriusstraße - Am Steinberg nordöstlich bis Romain-Rolland-Straße - südöstlich bis Wischbergeweg - Malchower Straße westlich bis Wildstrubelpfad - nordöstlich bis Heinersdorfer Graben - Anlage Familiengärten bis Straße 31 - westlich bis Grenze Familiengärten bis Frithjofstraße - Romain-Rolland-Straße nördlich bis Hauptweg - südlich bis Ortsteilgrenze Pankow - BAB 114 nordöstlich bis Ortsteilgrenze Französisch Buchholz/Karow - östliche Landesgrenze.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-4" data-label="📚 10 Schulen anzeigen">📚 10 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-4">
+      <div class="school-item">
+        <div class="sname">Brillat-Savarin-Schule (OSZ Gastgewerbe)</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Buschallee 23A, 13088 Berlin · <a href="https://www.osz-gastgewerbe.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Max-Bill-Schule (OSZ Planen, Bauen, Gestalten)</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Gustav-Adolf-Straße 66, 13086 Berlin · <a href="https://www.max-bill-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Weißen See</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Falkenberger Straße 31, 13088 Berlin · <a href="https://grundschuleamweissensee.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule im Moselviertel</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Brodenbacher Weg 31, 13088 Berlin · <a href="https://www.moselschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule unter den Bäumen</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Alt-Blankenburg 26, 13129 Berlin · <a href="http://www.gudbaeumen.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Georg-Zacharias-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Sulzfelder Straße 15, 13088 Berlin · <a href="https://georgzacharias-gs.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule an der Rennbahn</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Rennbahnstraße 45, 13086 Berlin · <a href="https://www.03g49.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Hagenbeck-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Gustav-Adolf-Straße 60, 13086 Berlin · <a href="http://www.hagenbeck-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Stephanus-Schule</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Albertinenstraße 20, 13086 Berlin</div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Stephanus-Grundschule </div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Parkstraße 22, 13086 Berlin · <a href="https://www.stephanus.org" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk5">
     <h2>Wahlkreis 5</h2>
     <div class="kurz">Pankow-Süd, Heinersdorf</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab Bahnbereich Höhe Esplanade nordöstlich bis Berliner Straße - Bahnbereich bis Prenzlauer Promenade nördlich bis Bahnbereich/Ortsteilgrenze Pankow - bis Romain-Rolland-Straße südlich bis Frithjofstraße östlich bis Blankenburger Straße südlich bis Straße 31 - nordöstlich Anlage Familiengärten bis Ortsteilgrenze Blankenburg/Heinersdorfer Graben südöstlich bis Schreckhornweg südwestlich bis Wildstrubelpfad/Malchower Straße östlich bis Wischbergeweg südwestlich bis Romain-Rolland-Straße südwestlich bis Am Steinberg südwestlich bis Prenzlauer Promenade südlich bis Wisbyer Straße - Schönhauser Allee/Mühlenstraße nördlich bis Esplanade.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-5" data-label="📚 11 Schulen anzeigen">📚 11 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-5">
+      <div class="school-item">
+        <div class="sname">Grundschule am Wasserturm</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Tino-Schwierzina-Straße 66, 13089 Berlin · <a href="https://grundschule-am-wasserturm.com" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Klecks-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Brixener Straße 40, 13187 Berlin · <a href="https://klecksgrundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule Wolkenstein</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Neumannstraße 65, 13189 Berlin · <a href="https://gs-wolkenstein.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Trelleborg-Schule (Grundschule)</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Eschengraben 40, 13189 Berlin · <a href="https://trelleborg-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Kurt-Tucholsky-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Neumannstraße 9, 13189 Berlin · <a href="https://www.kto-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Janusz-Korczak-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Dolomitenstraße 94, 13187 Berlin · <a href="https://jks-pankow.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Klax-Gemeinschaftsschule</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Neumannstraße 13A, 13189 Berlin · <a href="https://klax.de/de/schule" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Berlin Bilingual School (Integrierte Sekundarschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Granitzstraße 38A, 13189 Berlin · <a href="https://www.berlin-bilingual-school.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">SAfS - Spektrum Akademie für Sozialpädagogik</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Tino-Schwierzina-Straße 32, 13089 Berlin · <a href="https://www.spektrum-akademie.berlin/erzieher-ausbildung.html" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Klax Fachoberschule</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Borkumstraße 2, 13189 Berlin · <a href="https://klax.de/de/schule" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Rosa-Luxemburg-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Kissingenstraße 12, 13189 Berlin · <a href="https://www.rosa-luxemburg-gymnasium.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk6">
     <h2>Wahlkreis 6</h2>
     <div class="kurz">Esplanade, Schönhauser Allee, Prenzlauer Allee</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab Bezirksgrenze Mitte/Eberswalder Straße - Bahnbereich nördlich bis Esplanade - bis Mühlenstraße - Schönhauser Allee bis S-Bahnhof Schönhauser Allee - Bahnbereich bis S-Bahnhof Prenzlauer Allee - südlich bis Danziger Straße - westlich bis Eberswalder Straße - Bezirksgrenze Mitte.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-6" data-label="📚 7 Schulen anzeigen">📚 7 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-6">
+      <div class="school-item">
+        <div class="sname">Abendgymnasium Prenzlauer Berg</div>
+        <div class="styp">Andere Schule · öffentlich</div>
+        <div class="saddr">Driesener Straße 22, 10439 Berlin · <a href="https://www.abendgymnasium-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Thomas-Mann-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Greifenhagener Straße 58, 10437 Berlin · <a href="https://thomas-mann-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schule am Falkplatz (Grundschule)</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Gleimstraße 49, 10437 Berlin · <a href="https://www.schule-am-falkplatz.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Bornholmer Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Ibsenstraße 17, 10439 Berlin · <a href="https://bornholmer-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule im Eliashof</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Senefelderstraße 6, 10437 Berlin · <a href="https://www.grundschule-im-eliashof.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Freie Grundschule Pfefferwerk</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Schönfließer Straße 7, 10439 Berlin · <a href="https://www.freie-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Käthe-Kollwitz-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Dunckerstraße 65, 10439 Berlin · <a href="https://www.kaethe-kollwitz-gymnasium.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk7">
     <h2>Wahlkreis 7</h2>
     <div class="kurz">Prenzlauer Berg-West (Wisbyer bis Greifswalder Straße)</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab Wisbyer Straße - Prenzlauer Promenade - Am Steinberg - Pistoriusstraße - Berliner Allee südwestlich bis Greifswalder Straße - S-Bahnhof Greifswalder Straße - Bahnbereich nordwestlich bis S-Bahnhof Schönhauser Allee - nördlich bis Wisbyer Straße.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-7" data-label="📚 10 Schulen anzeigen">📚 10 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-7">
+      <div class="school-item">
+        <div class="sname">Elinor-Ostrom-Schule (OSZ Bürowirtschaft und Dienstleistungen)</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Mandelstraße 6, 10409 Berlin · <a href="https://www.oszeos.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Staatliche Ballett- und Artistikschule Berlin</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Erich-Weinert-Straße 103, 10409 Berlin · <a href="http://www.ballettschule-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schule am Hamburger Platz (Grundschule)</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Gustav-Adolf-Straße 21, 13086 Berlin · <a href="https://www.schule-am-hamburger-platz.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Carl-Humann-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Stahlheimer Straße 22, 10439 Berlin · <a href="http://www.carl-humann-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Heinz-Brandt-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Langhansstraße 120, 13086 Berlin · <a href="https://heinz-brandt-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Wilhelm-von-Humboldt-Gemeinschaftsschule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Erich-Weinert-Straße 70, 10439 Berlin · <a href="https://wvh-gemeinschaftsschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Katholische Theresienschule (Gymnasium)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Behaimstraße 29, 13086 Berlin · <a href="http://www.Theresienschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Klax Berufsakademie</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Langhansstraße 74B, 13086 Berlin · <a href="https://klax.de/de/berufsakademie" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Heinrich-Schliemann-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Dunckerstraße 64, 10439 Berlin · <a href="http://www.hsg-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Primo-Levi-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Pistoriusstraße 133, 13086 Berlin · <a href="http://www.plg-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk8">
     <h2>Wahlkreis 8</h2>
     <div class="kurz">Prenzlauer Berg-Südost (bis Grenze Friedrichshain-Kreuzberg)</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab Bezirksgrenze Friedrichshain-Kreuzberg bis Otto-Braun-Straße - Bezirksgrenze Mitte bis Eberswalder Straße - Danziger Straße bis Prenzlauer Allee nördlich bis S-Bahnhof Prenzlauer Allee - Bahnbereich südöstlich bis S-Bahnhof Greifswalder Straße - südwestlich bis Bezirksgrenze Friedrichshain-Kreuzberg.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-8" data-label="📚 14 Schulen anzeigen">📚 14 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-8">
+      <div class="school-item">
+        <div class="sname">Heinrich-Roller-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Heinrich-Roller-Straße 18, 10405 Berlin · <a href="https://www.heinrich-roller-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Kollwitzplatz</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Knaackstraße 67, 10435 Berlin · <a href="https://gs-am-kollwitzplatz.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule an der Marie</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Christburger Straße 7, 10405 Berlin · <a href="http://www.schule-an-der-Marie.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Planetarium</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Ella-Kay-Straße 47, 10405 Berlin · <a href="http://www.gsap.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schule am Senefelderplatz</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Schönhauser Allee 165, 10435 Berlin · <a href="http://www.schule-am-senefelderplatz.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Teutoburger Platz</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Templiner Straße 1, 10119 Berlin · <a href="https://schule-am-teute.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule im Hofgarten</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Danziger Straße 50, 10435 Berlin · <a href="https://grundschuleimhofgarten.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schulen Christburg Campus Prenzlauer Berg</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Christburger Straße 14, 10405 Berlin · <a href="http://www.christburg-campus.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Lauder Beth-Zion Schule (Gemeinschaftsschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Rykestraße 53, 10405 Berlin · <a href="https://lauderschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">WETEK - Fachschule für Sozialpädagogik</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Christinenstraße 18, 10119 Berlin · <a href="https://www.wetek.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">S.K.O.U.T. - Fachschule für Sozialpädagogik</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Immanuelkirchstraße 10, 10405 Berlin · <a href="http://www.s-k-o-u-t.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Weiterdenker-Fachschule für Sozialpädagogik</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Danziger Straße 50, 10435 Berlin · <a href="https://weiterdenker-fachschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Pfefferwerk - Fachschule für Sozialpädagogik</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Christinenstraße 18, 10119 Berlin · <a href="https://pfefferwerk-akademie.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Helene-Haeusler-Schule</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Mendelssohnstraße 10, 10405 Berlin · <a href="http://www.helene-haeusler-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk9">
     <h2>Wahlkreis 9</h2>
     <div class="kurz">Weißensee-Südost</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>ab Greifswalder Straße - S-Bahnhof Greifswalder Straße - Berliner Allee - Indira-Gandhi-Straße bis Weißenseer Weg - Bezirksgrenze Lichtenberg - Bezirksgrenze Friedrichshain-Kreuzberg bis Greifswalder Straße.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-pankow-9" data-label="📚 18 Schulen anzeigen">📚 18 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-pankow-9">
+      <div class="school-item">
+        <div class="sname">Homer-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Pasteurstraße 10, 10407 Berlin · <a href="http://www.homer-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Bötzow-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">John-Schehr-Straße 38, 10407 Berlin · <a href="http://www.boetzow-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Paul-Lincke-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Pieskower Weg 39, 10409 Berlin · <a href="https://plg.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Picasso-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Gounodstraße 71, 13088 Berlin · <a href="https://picasso-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule im Blumenviertel</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Syringenplatz 30, 10407 Berlin · <a href="https://www.grundschule-im-blumenviertel.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Maria-Leo-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Conrad-Blenkle-Straße 20, 10407 Berlin · <a href="https://www.maria-leo-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Kurt-Schwitters-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Greifswalder Straße 25, 10405 Berlin · <a href="https://www.kurt-schwitters.schule" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Gustave-Eiffel-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Hanns-Eisler-Straße 78, 10409 Berlin · <a href="http://www.gustave-eiffel-schule.de/" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Tesla-Schule (Gemeinschaftsschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Rudi-Arndt-Straße 18, 10407 Berlin · <a href="https://www.tesla-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Katholisches Schulzentrum Edith Stein</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Greifswalder Straße 18, 10318 Berlin · <a href="https://schulzentrum-edithstein.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">GPB-College gGmbH</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Storkower Straße 115A, 10407 Berlin · <a href="https://www.gpb-college.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">dreieins-Grundschule Berlin-Pankow</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Bizetstraße 64, 13088 Berlin · <a href="https://www.dreieins.org/pankow" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Ting-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Berliner Allee 128, 13088 Berlin · <a href="https://ting-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Freie Waldorfschule am Prenzlauer Berg</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Gürtelstraße 16, 10409 Berlin · <a href="http://www.schulemachen.com" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">PepperMont Freie Sekundarschule für ganzheitliches Lernen</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Greifswalder Straße 88, 10409 Berlin · <a href="https://www.pfefferwerk.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Technische Jugendfreizeit- und Bildungsgesellschaft (tjfbg) gGmbH</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Storkower Straße 139B, 10407 Berlin · <a href="https://www.tjfbg.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Bilinguale Schule Phorms Berlin Prenzlauer Berg (Grundschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Hermann-Blankenstein-Straße 12, 10249 Berlin · <a href="https://neu-prenzlauer-berg.phorms.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Felix-Mendelssohn-Bartholdy-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Pasteurstraße 7, 10407 Berlin · <a href="http://www.fmbg-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
-  <div class="footer-note">Quelle: Amtsblatt für Berlin Nr. 41 / 2. Oktober 2025 — Örtliche Abgrenzung der Wahlkreise für die Wahl zum 20. Abgeordnetenhaus von Berlin.</div>
+  <div class="footer-note">Quelle Wahlkreise: Amtsblatt für Berlin Nr. 41 / 2. Oktober 2025. Quelle Schulen: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin (Datenlizenz Deutschland – Zero).</div>
 </div>
 <script>
-(function() {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').catch(function(){});
-  }
-
-  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
-  var isInStandalone = ('standalone' in navigator && navigator.standalone);
-  var shown = sessionStorage.getItem('pwa-banner-shown');
-  if (shown || isInStandalone) return;
-
-  if (isIOS) {
-    setTimeout(function() {
-      var bar = document.createElement('div');
-      bar.id = 'pwa-banner';
-      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#04162E;border-top:2px solid #F6B45F;padding:14px 16px;z-index:9999;font-family:system-ui;';
-      bar.innerHTML =
-        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">' +
-          '<div>' +
-            '<div style="color:#F6B45F;font-size:0.82rem;font-weight:700;margin-bottom:4px;">📲 Ana ekrana ekle</div>' +
-            '<div style="color:#b0b5bf;font-size:0.75rem;line-height:1.5;">Safari\'de <strong style="color:#eaf2fb;">&#11015; Paylaş</strong> butonuna bas, ardından <strong style="color:#eaf2fb;">Ana Ekrana Ekle</strong> seçeneğini seç.</div>' +
-            '<div style="color:#4a6a88;font-size:0.68rem;margin-top:4px;">&#9432; iOS\'ta otomatik kurulum desteklenmiyor — bu adım gerekli.</div>' +
-          '</div>' +
-          '<button onclick="document.getElementById(\'pwa-banner\').remove();sessionStorage.setItem(\'pwa-banner-shown\',\'1\')" style="background:transparent;border:none;color:#7a9ab8;font-size:1.2rem;cursor:pointer;padding:0 4px;flex-shrink:0;">✕</button>' +
-        '</div>';
-      document.body.appendChild(bar);
-      sessionStorage.setItem('pwa-banner-shown', '1');
-    }, 3000);
-    return;
-  }
-
-  var deferredPrompt = null;
-  window.addEventListener('beforeinstallprompt', function(e) {
-    e.preventDefault();
-    deferredPrompt = e;
-    setTimeout(function() {
-      if (!deferredPrompt) return;
-      var bar = document.createElement('div');
-      bar.id = 'pwa-banner';
-      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#04162E;border-top:2px solid #F6B45F;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;z-index:9999;font-family:system-ui;';
-      bar.innerHTML =
-        '<span style="color:#eaf2fb;font-size:0.85rem;">📲 Ana ekrana ekle &mdash; daha hızlı aç!</span>' +
-        '<div style="display:flex;gap:8px;">' +
-          '<button onclick="installPWA()" style="background:#F6B45F;border:none;color:#04162E;padding:6px 16px;border-radius:20px;font-weight:700;cursor:pointer;font-size:0.82rem;">Ekle</button>' +
-          '<button onclick="document.getElementById(\'pwa-banner\').remove();sessionStorage.setItem(\'pwa-banner-shown\',\'1\')" style="background:transparent;border:1px solid rgba(246,180,95,0.3);color:#7a9ab8;padding:6px 12px;border-radius:20px;cursor:pointer;font-size:0.82rem;">Sonra</button>' +
-        '</div>';
-      document.body.appendChild(bar);
-    }, 3000);
+document.querySelectorAll('.schools-toggle').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var list = document.getElementById(btn.getAttribute('data-target'));
+    list.classList.toggle('open');
+    btn.textContent = list.classList.contains('open') ? '▲ Schulen ausblenden' : btn.getAttribute('data-label');
   });
-
-  window.installPWA = function() {
-    if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt.userChoice.then(function(){ deferredPrompt=null; }); }
-    var b = document.getElementById('pwa-banner'); if (b) b.remove();
-    sessionStorage.setItem('pwa-banner-shown', '1');
-  };
-})();
+});
 </script>
-
-<div class="pacdi-share-bar" id="pacdiShareBar" style="clear:both;width:100%;flex-basis:100%;"></div>
-<script>
-(function(){
-  var pageTitle = (document.title.split('|')[0] || document.title).trim();
-  var pageUrl = window.location.href;
-  var shareText = 'Bu ' + pageTitle + ' aracını faydalı buldum, senin de işine yarayabilir:';
-
-  var bar = document.getElementById('pacdiShareBar');
-  if (!bar) return;
-  bar.innerHTML =
-    '<div class="pacdi-share-label">🔗 Bu aracı paylaş</div>' +
-    '<div class="pacdi-share-btns">' +
-      '<button class="pacdi-share-btn" id="pacdiShareNative" style="display:none;">📤 Paylaş</button>' +
-      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?text=' + encodeURIComponent(shareText + ' ' + pageUrl) + '">💬 WhatsApp</a>' +
-      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(pageUrl) + '">𝕏</a>' +
-      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl) + '">Facebook</a>' +
-      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(pageUrl) + '">LinkedIn</a>' +
-      '<button class="pacdi-share-btn" id="pacdiShareCopy">🔗 Kopyala</button>' +
-    '</div>';
-
-  if (navigator.share) {
-    var nativeBtn = document.getElementById('pacdiShareNative');
-    nativeBtn.style.display = 'inline-flex';
-    nativeBtn.onclick = function(){
-      navigator.share({ title: pageTitle, text: shareText, url: pageUrl }).catch(function(){});
-    };
-  }
-
-  var copyBtn = document.getElementById('pacdiShareCopy');
-  copyBtn.onclick = function(){
-    navigator.clipboard.writeText(pageUrl).then(function(){
-      var old = copyBtn.textContent;
-      copyBtn.textContent = '✓ Kopyalandı!';
-      setTimeout(function(){ copyBtn.textContent = old; }, 2000);
-    }).catch(function(){});
-  };
-})();
-</script>
-
-<div id="pacdi-fsek" style="clear:both;width:100%;flex-basis:100%;text-align:center;padding:28px 16px 20px;border-top:1px solid rgba(212,175,55,0.15);margin-top:32px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;box-sizing:border-box;">
-  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.25);border-radius:24px;padding:8px 20px;margin-bottom:12px;flex-wrap:wrap;justify-content:center;">
-    <span style="font-size:1rem;">🛡️</span>
-    <span style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;color:#D4AF37;text-transform:uppercase;">FSEK Registered · PACDI Framework</span>
-  </div>
-  <div style="font-size:0.78rem;color:#8A8F9A;margin-bottom:4px;">Operated by AskMeAI Teknoloji Ltd. Şti. (TR: 23837)</div>
-  <div style="font-size:0.72rem;color:#6B7280;margin-bottom:10px;">Intellectual property owned by © 2026 PACDI Global Yazılım Ltd. Şti. &mdash; FSEK No: <a href="https://pacdi.eu/legal.html" style="color:#D4AF37;text-decoration:none;">2026/18897</a></div>
-  <div style="font-size:0.82rem;font-style:italic;color:#6B7280;">&ldquo;Technology in the service of humanity.&rdquo;</div>
-</div>
 </body>
 </html>

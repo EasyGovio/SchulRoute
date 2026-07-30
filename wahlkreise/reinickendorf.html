@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wahlkreise Reinickendorf — Berlin Wahl 2026 | SchulRoute</title>
-<meta name="description" content="Alle 6 Wahlkreise im Bezirk Reinickendorf für die Wahl zum 20. Abgeordnetenhaus von Berlin am 20. September 2026 — mit Grenzverlauf und Kurzbeschreibung.">
+<meta name="description" content="Alle 6 Wahlkreise im Bezirk Reinickendorf für die Wahl zum 20. Abgeordnetenhaus von Berlin am 20. September 2026 — mit Grenzverlauf, Kurzbeschreibung und allen Schulen je Wahlkreis.">
 <link rel="canonical" href="https://schulroute.de/wahlkreise/reinickendorf.html">
 <style>
 * { box-sizing: border-box; }
@@ -27,61 +27,19 @@ h1 { color:#F6B45F; font-size:1.5rem; margin-bottom:4px; }
 .wk-card .kurz { color:#eaf2fb; font-size:0.95rem; margin-bottom:10px; }
 .wk-card details summary { color:#7a9ab8; cursor:pointer; font-size:0.82rem; }
 .wk-card details p { color:#8aa0bc; font-size:0.82rem; margin-top:8px; }
+.schools-toggle { color:#F6B45F; font-size:0.82rem; cursor:pointer; margin-top:10px; display:inline-block; }
+.schools-list { display:none; margin-top:10px; border-top:1px solid rgba(246,180,95,0.1); padding-top:10px; }
+.schools-list.open { display:block; }
+.school-item { padding:8px 0; border-bottom:1px solid rgba(246,180,95,0.06); font-size:0.85rem; }
+.school-item .sname { color:#eaf2fb; font-weight:600; }
+.school-item .styp { color:#F6B45F; font-size:0.72rem; }
+.school-item .saddr { color:#7a9ab8; font-size:0.78rem; }
 .back-link { display:inline-block; margin-bottom:16px; color:#7a9ab8; text-decoration:none; font-size:0.85rem; }
 .back-link:hover { color:#F6B45F; }
 .footer-note { text-align:center; color:#6a80a0; font-size:0.75rem; margin-top:30px; }
 </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6ML8EDW0H"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-E6ML8EDW0H");</script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8426936740213369" crossorigin="anonymous"></script>
-    <link rel="manifest" href="/manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="PACDI">
-    <script>
-(function(){
-  if (sessionStorage.getItem('autoLang')) return;
-  var bl = (navigator.language || navigator.userLanguage || 'en').substring(0,2).toLowerCase();
-  var supported = ['tr','de','en'];
-  var lang = supported.indexOf(bl) > -1 ? bl : 'en';
-  sessionStorage.setItem('autoLang', lang);
-})();
-</script>
-    <script>
-(function(){
-  var params = new URLSearchParams(window.location.search);
-  if (params.get('beta') === 'pacdi2026') {
-    try { sessionStorage.setItem('betaUnlock', '1'); } catch(e) {}
-  }
-  window.isBetaUnlocked = function() {
-    try { return sessionStorage.getItem('betaUnlock') === '1'; } catch(e) { return false; }
-  };
-})();
-</script>
-    <style>
-    .pacdi-share-bar{margin-top:24px;padding:16px;background:rgba(246,180,95,0.05);border:1px solid rgba(246,180,95,0.15);border-radius:10px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,sans-serif;box-sizing:border-box;}
-    .pacdi-share-label{font-size:0.8rem;color:#7a9ab8;margin-bottom:10px;font-weight:600;}
-    .pacdi-share-btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
-    .pacdi-share-btn{display:inline-flex;align-items:center;gap:4px;font-size:0.78rem;padding:7px 14px;border-radius:20px;border:1px solid rgba(246,180,95,0.3);background:transparent;color:#F6B45F;text-decoration:none;cursor:pointer;font-family:inherit;}
-    .pacdi-share-btn:hover{background:rgba(246,180,95,0.1);}
-    </style>
 </head>
 <body>
-<!--
-╬═══════════════════════════════════════════════════════════════╮
-║         🛡️  PACDI FRAMEWORK — PROTECTED WORK                  ║
-║                                                               ║
-║  © 2026 PACDI Global Yazılım Ltd. Şti.                       ║
-║  FSEK Registration No : 2026/18897                            ║
-║  Trade Registry      : 23836 · Yunusemre / Manisa, TR       ║
-║                                                               ║
-║  This work and its modular software architecture are          ║
-║  protected under PACDI Software Library FSEK registration.   ║
-║  Unauthorized copying is subject to legal action.            ║
-║                                                               ║
-║  pacdi.eu · pacdi.de · info@pacdi.eu                         ║
-╠═══════════════════════════════════════════════════════════════╣
--->
-
 <header>
   <a href="/wahlkreise/" class="logo">🗳️ SchulRoute</a>
   <button class="menu-btn" onclick="document.getElementById('sideMenu').classList.toggle('open')">☰ Bezirke</button>
@@ -105,168 +63,458 @@ h1 { color:#F6B45F; font-size:1.5rem; margin-bottom:4px; }
 <div class="container">
   <a href="/wahlkreise/" class="back-link">← Alle Bezirke / Suche</a>
   <h1>Wahlkreise Reinickendorf</h1>
-  <div class="sub">6 Wahlkreise für die Wahl zum 20. Abgeordnetenhaus von Berlin am 20. September 2026</div>
+  <div class="sub">6 Wahlkreise für die Wahl zum 20. Abgeordnetenhaus von Berlin am 20. September 2026 — inkl. aller Schulen je Wahlkreis</div>
   
-  <div class="wk-card">
+  <div class="wk-card" id="wk1">
     <h2>Wahlkreis 1</h2>
     <div class="kurz">Reinickendorf-Ost, Reinickendorf-West (teilweise)</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>von Roedernallee/Am Nordgraben östlich bis S-Bahn-Gleise/Grenze Pankow südöstlich bis Panke südlich bis Kühnemannstraße/Nordbahnstraße westlich Grenze Mitte bis Provinzstraße südlich bis Ritterlandweg westlich bis Reginhardstraße südwestlich Grenze Mitte bis Markstraße nördlich bis Walderseestraße westlich bis Brienzer Straße nördlich bis Holländerstraße westlich bis Teichstraße nördlich bis Gotthardstraße westlich bis Brusebergstraße nördlich bis Humboldtstraße nordöstlich bis Lindauer Allee östlich bis Roedernallee nördlich bis S-Bahn-Brücke westlich bis Thyssenstraße nordöstlich bis Roedernallee bis Am Nordgraben.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-reinickendorf-1" data-label="📚 10 Schulen anzeigen">📚 10 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-reinickendorf-1">
+      <div class="school-item">
+        <div class="sname">VHS Neukölln - Otto-Suhr / Tannenhofschule</div>
+        <div class="styp">Andere Schule · öffentlich</div>
+        <div class="saddr">Kühleweinstraße 5, 13409 Berlin · <a href="https://zbw-neukoelln.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Georg-Schlesinger-Schule (OSZ Maschinen- und Fertigungstechnik)</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Kühleweinstraße 5, 13409 Berlin · <a href="https://www.gs-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Schäfersee</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Holländerstraße 25, 13407 Berlin · <a href="https://www.schaefersee-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Reginhard-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Letteallee 39, 13409 Berlin · <a href="http://www.reginhard-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Kolumbus-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Büchsenweg 23A, 13409 Berlin · <a href="http://www.kolumbus-schule.eu" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Hausotter-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Hausotterplatz 4, 13409 Berlin · <a href="https://hausotter-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Paul-Löbe-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Lindauer Allee 23, 13407 Berlin · <a href="https://www.paul-loebe-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Gustav-Freytag-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Breitkopfstraße 66, 13409 Berlin · <a href="https://www.gustav-freytag-schule.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Friedrich-Engels-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Emmentaler Straße 67, 13407 Berlin · <a href="https://www.feg.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Europäisches Gymnasium Bertha-von-Suttner</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Reginhardstraße 172, 13409 Berlin · <a href="https://www.bertha-von-suttner.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk2">
     <h2>Wahlkreis 2</h2>
     <div class="kurz">Reinickendorf-West, Tegel-Süd (teilweise), Wittenau (teilweise), Mäckeritzwiesen</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>von Rathauspromenade/Am Nordgraben östlich bis Roedernallee südlich bis Thyssenstraße südwestlich S-Bahn-Gleise östlich bis Roedernallee südlich bis Lindauer Allee/Humboldtstraße südwestlich bis Brusebergstraße südlich bis Gotthardstraße östlich bis Teichstraße südlich bis Holländerstraße westlich Grenze Mitte über Kapweg bis Kurt-Schumacher-Damm bis Hinckeldeybrücke, Hohenzollernkanal Grenze Charlottenburg-Wilmersdorf westlich bis Bernauer Straße nördlich, östlich bis Bernhard-Lichtenberg-Platz - Berliner Straße nördlich bis Ernststraße östlich bis S-Bahn-Gleise bis Oranienburger Straße nördlich bis Rathauspromenade.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-reinickendorf-2" data-label="📚 9 Schulen anzeigen">📚 9 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-reinickendorf-2">
+      <div class="school-item">
+        <div class="sname">Till-Eulenspiegel-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Humboldtstraße 8, 13407 Berlin · <a href="https://www.till-eulenspiegel-schule-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Mark-Twain-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Auguste-Viktoria-Allee 95, 13403 Berlin · <a href="https://www.twainweb.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Ringelnatz-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Wilhelm-Gericke-Straße 7, 13437 Berlin · <a href="http://www.ringelnatz-grundschule.de/" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Alfred-Brehm-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Ascheberger Weg 8A, 13507 Berlin · <a href="https://www.alfred-brehm-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Hermann-Schulz-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Kienhorststraße 67, 13403 Berlin · <a href="http://www.hermann-schulz-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Reineke-Fuchs-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Foxweg 15, 13403 Berlin · <a href="http://www.reineke-fuchs-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Max-Beckmann-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Auguste-Viktoria-Allee 37, 13403 Berlin · <a href="http://www.m-b-o.net" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Euro Akademie Berlin</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Berliner Straße 66, 13507 Berlin · <a href="https://www.euroakademie.de/standorte/berlin.html" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Mosaik Fachschule für Sozialpädagogik</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Flohrstraße 21, 13507 Berlin · <a href="https://www.jugendundsozialwerk.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk3">
     <h2>Wahlkreis 3</h2>
     <div class="kurz">Heiligensee, Konradshöhe, Tegelort, Tegel (teilweise), Tegel-Süd (teilweise), Saatwinkel</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>vom nördlichen Ufer Niederneuendorfer See östlich Landesgrenze, Ortsteilgrenze Heiligensee/Frohnau bis Ende Tegeler Forst/Grenze Tegel-Hermsdorf südlich bis Tegeler Fließ westlich bis S-Bahn-Trasse südlich bis Waidmannsluster Damm westlich bis Karolinenstraße südlich bis Berliner Straße südlich bis Bernhard-Lichtenberg-Platz - Bernauer Straße westlich, südlich bis Hohenzollernkanal Grenze Spandau nördlich bis Havel nördlich bis Landesgrenze bis Niederneuendorfer See.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-reinickendorf-3" data-label="📚 11 Schulen anzeigen">📚 11 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-reinickendorf-3">
+      <div class="school-item">
+        <div class="sname">Havelmüller-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Namslaustraße 49, 13507 Berlin · <a href="https://havelmueller-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Franz-Marc-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Treskowstraße 26, 13507 Berlin · <a href="http://www.fmg-tegel.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Ellef-Ringnes-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Im Erpelgrund 11, 13503 Berlin · <a href="https://www.ellef-ringnes-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Tegelschen Ort</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Gerlindeweg 11, 13505 Berlin · <a href="http://www.grundschule-tegelort.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Otfried-Preußler-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Schulzendorfer Straße 99, 13503 Berlin · <a href="https://www.ops-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Julius-Leber-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Treskowstraße 26, 13507 Berlin · <a href="https://www.jls-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Albrecht-Haushofer-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Kurzebracker Weg 40, 13503 Berlin · <a href="https://www.albrecht-haushofer-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Demokratische Schule X (Gemeinschaftsschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Ruppiner Chaussee 209, 13503 Berlin · <a href="https://www.demokratische-schule-x.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Montessori Campus am Tegeler Forst</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Gabrielenstraße 12, 13507 Berlin · <a href="https://montessori-tegel.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">EJF - Fachschule für soziale Berufe</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Keilerstraße 17A, 13503 Berlin · <a href="https://www.ejf.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schulfarm Insel Scharfenberg</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Schwarzer Weg 101, 13505 Berlin · <a href="http://www.insel-scharfenberg.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk4">
     <h2>Wahlkreis 4</h2>
     <div class="kurz">Wittenau (teilweise), Waidmannslust, Borsigwalde, Tegel (teilweise)</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>von Berliner Straße/Waidmannsluster Damm nordöstlich bis Hochjagdstraße südöstlich bis Packereigraben nordöstlich bis S-Bahn-Trasse nordwestlich über Dianastraße bis Tegeler Fließ flussaufwärts bis Hermsdorfer See südwärts Büchenbronner Steig/Ziegeleigraben/Erlenbruchgraben bis Öschelbronner Weg/Welzower Steig bis Kolonie Seggeluchbecken östlich bis Finsterwalder Straße südlich, südwestlich bis S-Bahn-Linie südöstlich bis Schorfheidestraße/Am Nordgraben westlich bis Rathauspromenade südlich, östlich bis Oranienburger Straße südlich bis Ernststraße westlich bis Berliner Straße nördlich bis Waidmannsluster Damm.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-reinickendorf-4" data-label="📚 16 Schulen anzeigen">📚 16 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-reinickendorf-4">
+      <div class="school-item">
+        <div class="sname">Emil-Fischer-Schule (OSZ Ernährung und Lebensmitteltechnik)</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Cyclopstraße 1, 13437 Berlin · <a href="https://www.emilfischerschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Ernst-Litfaß-Schule (OSZ Mediengestaltung und Medientechnologie)</div>
+        <div class="styp">Berufsschule · öffentlich</div>
+        <div class="saddr">Cyclopstraße 1, 13437 Berlin · <a href="https://ernst-litfass-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Peter-Witte-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Rathauspromenade 75, 13437 Berlin · <a href="http://www.peter-witte-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Borsigwalder Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Miraustraße 100, 13509 Berlin · <a href="https://borsigwaldergs.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Hoffmann-von-Fallersleben-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Ziekowstraße 80, 13509 Berlin · <a href="https://www.grundschule-fallersleben-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule in den Rollbergen</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Waldshuter Zeile 6, 13469 Berlin · <a href="http://www.rollberge.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Benjamin-Franklin-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Sommerfelder Straße 5, 13509 Berlin · <a href="https://benjamin-franklin-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Jean-Krämer-Schule (Integrierte Sekundarschule) Wittenau</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Alt-Wittenau 8, 13437 Berlin · <a href="https://www.jks.berlin" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Private Goethe-Schulen</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Wittenauer Straße 112, 13435 Berlin · <a href="http://goethe-grundschule.bifiz.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">G.A.L.B Förderung gGmbH</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Holzhauser Straße 180, 13509 Berlin · <a href="https://www.galb-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Stötzner-Schule</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Tietzstraße 26, 13509 Berlin · <a href="https://www.stoetznerschule-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schule am Park</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Eichborndamm 276, 13437 Berlin · <a href="https://schule-am-park-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Toulouse-Lautrec-Schule</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Miraustraße 126, 13509 Berlin · <a href="https://www.toulouse-lautrec-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Humboldt-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Hatzfeldtallee 2, 13509 Berlin · <a href="https://www.humboldtschule-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Gabriele-von-Bülow-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Tile-Brügge-Weg 63, 13509 Berlin · <a href="https://www.gvb-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Romain-Rolland-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Place Molière 4, 13469 Berlin · <a href="https://www.romain-rolland-gymnasium.eu" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk5">
     <h2>Wahlkreis 5</h2>
     <div class="kurz">Lübars, Märkisches Viertel</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>vom Tegeler Fließ Landesgrenze östlich, südlich Grenze Pankow bis S-Bahn-Linie/Am Nordgraben westlich bis S-Bahnhof Wilhelmsruher Damm nordöstlich bis Finsterwalder Straße bis Kolonie Frohsinn westlich bis Welzower Steig nördlich bis Öschelbronner Weg nördlich Erlenbruchgraben/Ziegeleigraben/Büchenbronner Steig bis Hermsdorfer See/Tegeler Fließ nordöstlich bis Landesgrenze.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-reinickendorf-5" data-label="📚 11 Schulen anzeigen">📚 11 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-reinickendorf-5">
+      <div class="school-item">
+        <div class="sname">Grundschule an der Peckwisch</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Tornower Weg 26, 13439 Berlin · <a href="https://www.peckwisch.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Vierrutenberg</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Am Freibad 2, 13469 Berlin · <a href="https://grundschule-am-vierrutenberg.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Märkische Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Dannenwalder Weg 163, 13439 Berlin · <a href="https://www.staatliche-europa-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Chamisso-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Senftenberger Ring 27, 13435 Berlin · <a href="https://www.chamisso-grundschule.com" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Charlie-Chaplin-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Wilhelmsruher Damm 90, 13439 Berlin · <a href="https://www.charlie-chaplin-grundschule.com" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Lauterbach-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Senftenberger Ring 41, 13435 Berlin · <a href="https://www.lauterbach-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Bettina-von-Arnim-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Senftenberger Ring 49, 13435 Berlin · <a href="https://www.bettina-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Campus Hannah Höch (Gemeinschaftsschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Finsterwalder Straße 52, 13435 Berlin · <a href="https://www.campus-hannah-hoech.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Waldorfschule Märkisches Viertel Berlin</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Treuenbrietzener Straße 28, 13439 Berlin · <a href="https://www.waldorfschule-mv.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Lauterbach-Schule</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Senftenberger Ring 41, 13435 Berlin · <a href="https://www.lauterbach-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Thomas-Mann-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Königshorster Straße 10, 13439 Berlin · <a href="https://www.tmgberlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
 
-  <div class="wk-card">
+  <div class="wk-card" id="wk6">
     <h2>Wahlkreis 6</h2>
     <div class="kurz">Frohnau, Hermsdorf, Freie Scholle</div>
     <details>
       <summary>Genauer Grenzverlauf anzeigen</summary>
       <p>von Ortsteilgrenze Heiligensee/Frohnau Landesgrenze nordöstlich, östlich, südlich, südöstlich bis Ortsteilgrenze Hermsdorf/Lübars - Tegeler Fließ südwestlich über Oraniendamm bis S-Bahn-Trasse bis Packereigraben westlich bis Avenue Charles de Gaulle nördlich bis Waidmannsluster Damm südwestlich bis Hermsdorfer Damm nördlich bis Tegeler Fließ nördlich bis Ortsteilgrenze Hermsdorf/Tegel nördlich bis Ortsteilgrenze Frohnau/Tegel westlich bis Landesgrenze/Ortsteilgrenze Heiligensee/Frohnau.</p>
     </details>
+    <span class="schools-toggle" data-target="sl-reinickendorf-6" data-label="📚 18 Schulen anzeigen">📚 18 Schulen anzeigen</span>
+    <div class="schools-list" id="sl-reinickendorf-6">
+      <div class="school-item">
+        <div class="sname">Münchhausen-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Artemisstraße 22, 13469 Berlin · <a href="http://www.muenchhausen-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Grundschule am Fließtal</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Seebadstraße 42, 13467 Berlin · <a href="https://www.grundschule-am-fliesstal.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Gustav-Dreyer-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Freiherr-vom-Stein-Straße 31, 13467 Berlin · <a href="https://www.gustav-dreyer-schule.com" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Victor-Gollancz-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Gollanczstraße 18, 13465 Berlin</div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Renée-Sintenis-Grundschule</div>
+        <div class="styp">Grundschule · öffentlich</div>
+        <div class="saddr">Laurinsteig 39, 13465 Berlin · <a href="http://www.Renee-Sintenis-Grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Carl-Benz-Schule (Integrierte Sekundarschule)</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Heidenheimer Straße 53, 13467 Berlin · <a href="http://www.carl-benz-oberschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Carl-Bosch-Schule</div>
+        <div class="styp">Integrierte Sekundarschule · öffentlich</div>
+        <div class="saddr">Frohnauer Straße 74, 13467 Berlin · <a href="https://www.carlbosch.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Evangelische Schule Frohnau</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Benediktinerstraße 11, 13465 Berlin · <a href="http://www.ev-frohnau.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Katholische Schule Salvator</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Fürst-Bismarck-Straße 8, 13469 Berlin · <a href="https://salvator.net, https://salvator-grundschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Elisabethstift-Schule (Gemeinschaftsschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Falkentaler Steig 10, 13467 Berlin · <a href="http://www.elisabethstift-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Alternativschule Berlin (Gemeinschaftsschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Bondickstraße 8, 13469 Berlin · <a href="https://www.alternativschule-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">APEGO-Schule Berlin (Gemeinschaftsschule)</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Dianastraße 44, 13469 Berlin · <a href="https://apego-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Eventus - Fachschule für Sozialpädagogik</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Dianastraße 43, 13469 Berlin · <a href="https://eventusfachschule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Elisabethstift-Schule</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Berliner Straße 118, 13467 Berlin · <a href="http://www.elisabethstift-schule.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Fachschule für Sozialpädagogik am Elisabethstift Berlin</div>
+        <div class="styp">Privatschule · privat</div>
+        <div class="saddr">Berliner Straße 118, 13467 Berlin · <a href="https://www.elisabethstift-berlin.de/fachschule" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Schule am Tegeler Forst</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Frohnauer Straße 74, 13467 Berlin · <a href="http://www.schule-am-tegeler-forst.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Waldseeschule</div>
+        <div class="styp">Schule mit sonderpädagogischem Förderschwerpunkt · öffentlich</div>
+        <div class="saddr">Olafstraße 32, 13467 Berlin · <a href="https://waldseeschule-berlin.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div>
+      <div class="school-item">
+        <div class="sname">Georg-Herwegh-Gymnasium</div>
+        <div class="styp">Gymnasium · öffentlich</div>
+        <div class="saddr">Fellbacher Straße 18, 13467 Berlin · <a href="http://www.herwegh-gymnasium.de" target="_blank" rel="noopener" style="color:#7a9ab8;">Website</a></div>
+      </div></div>
   </div>
-  <div class="footer-note">Quelle: Amtsblatt für Berlin Nr. 41 / 2. Oktober 2025 — Örtliche Abgrenzung der Wahlkreise für die Wahl zum 20. Abgeordnetenhaus von Berlin.</div>
+  <div class="footer-note">Quelle Wahlkreise: Amtsblatt für Berlin Nr. 41 / 2. Oktober 2025. Quelle Schulen: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin (Datenlizenz Deutschland – Zero).</div>
 </div>
 <script>
-(function() {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').catch(function(){});
-  }
-
-  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
-  var isInStandalone = ('standalone' in navigator && navigator.standalone);
-  var shown = sessionStorage.getItem('pwa-banner-shown');
-  if (shown || isInStandalone) return;
-
-  if (isIOS) {
-    setTimeout(function() {
-      var bar = document.createElement('div');
-      bar.id = 'pwa-banner';
-      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#04162E;border-top:2px solid #F6B45F;padding:14px 16px;z-index:9999;font-family:system-ui;';
-      bar.innerHTML =
-        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">' +
-          '<div>' +
-            '<div style="color:#F6B45F;font-size:0.82rem;font-weight:700;margin-bottom:4px;">📲 Ana ekrana ekle</div>' +
-            '<div style="color:#b0b5bf;font-size:0.75rem;line-height:1.5;">Safari\'de <strong style="color:#eaf2fb;">&#11015; Paylaş</strong> butonuna bas, ardından <strong style="color:#eaf2fb;">Ana Ekrana Ekle</strong> seçeneğini seç.</div>' +
-            '<div style="color:#4a6a88;font-size:0.68rem;margin-top:4px;">&#9432; iOS\'ta otomatik kurulum desteklenmiyor — bu adım gerekli.</div>' +
-          '</div>' +
-          '<button onclick="document.getElementById(\'pwa-banner\').remove();sessionStorage.setItem(\'pwa-banner-shown\',\'1\')" style="background:transparent;border:none;color:#7a9ab8;font-size:1.2rem;cursor:pointer;padding:0 4px;flex-shrink:0;">✕</button>' +
-        '</div>';
-      document.body.appendChild(bar);
-      sessionStorage.setItem('pwa-banner-shown', '1');
-    }, 3000);
-    return;
-  }
-
-  var deferredPrompt = null;
-  window.addEventListener('beforeinstallprompt', function(e) {
-    e.preventDefault();
-    deferredPrompt = e;
-    setTimeout(function() {
-      if (!deferredPrompt) return;
-      var bar = document.createElement('div');
-      bar.id = 'pwa-banner';
-      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#04162E;border-top:2px solid #F6B45F;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;z-index:9999;font-family:system-ui;';
-      bar.innerHTML =
-        '<span style="color:#eaf2fb;font-size:0.85rem;">📲 Ana ekrana ekle &mdash; daha hızlı aç!</span>' +
-        '<div style="display:flex;gap:8px;">' +
-          '<button onclick="installPWA()" style="background:#F6B45F;border:none;color:#04162E;padding:6px 16px;border-radius:20px;font-weight:700;cursor:pointer;font-size:0.82rem;">Ekle</button>' +
-          '<button onclick="document.getElementById(\'pwa-banner\').remove();sessionStorage.setItem(\'pwa-banner-shown\',\'1\')" style="background:transparent;border:1px solid rgba(246,180,95,0.3);color:#7a9ab8;padding:6px 12px;border-radius:20px;cursor:pointer;font-size:0.82rem;">Sonra</button>' +
-        '</div>';
-      document.body.appendChild(bar);
-    }, 3000);
+document.querySelectorAll('.schools-toggle').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var list = document.getElementById(btn.getAttribute('data-target'));
+    list.classList.toggle('open');
+    btn.textContent = list.classList.contains('open') ? '▲ Schulen ausblenden' : btn.getAttribute('data-label');
   });
-
-  window.installPWA = function() {
-    if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt.userChoice.then(function(){ deferredPrompt=null; }); }
-    var b = document.getElementById('pwa-banner'); if (b) b.remove();
-    sessionStorage.setItem('pwa-banner-shown', '1');
-  };
-})();
+});
 </script>
-
-<div class="pacdi-share-bar" id="pacdiShareBar" style="clear:both;width:100%;flex-basis:100%;"></div>
-<script>
-(function(){
-  var pageTitle = (document.title.split('|')[0] || document.title).trim();
-  var pageUrl = window.location.href;
-  var shareText = 'Bu ' + pageTitle + ' aracını faydalı buldum, senin de işine yarayabilir:';
-
-  var bar = document.getElementById('pacdiShareBar');
-  if (!bar) return;
-  bar.innerHTML =
-    '<div class="pacdi-share-label">🔗 Bu aracı paylaş</div>' +
-    '<div class="pacdi-share-btns">' +
-      '<button class="pacdi-share-btn" id="pacdiShareNative" style="display:none;">📤 Paylaş</button>' +
-      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?text=' + encodeURIComponent(shareText + ' ' + pageUrl) + '">💬 WhatsApp</a>' +
-      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(pageUrl) + '">𝕏</a>' +
-      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl) + '">Facebook</a>' +
-      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(pageUrl) + '">LinkedIn</a>' +
-      '<button class="pacdi-share-btn" id="pacdiShareCopy">🔗 Kopyala</button>' +
-    '</div>';
-
-  if (navigator.share) {
-    var nativeBtn = document.getElementById('pacdiShareNative');
-    nativeBtn.style.display = 'inline-flex';
-    nativeBtn.onclick = function(){
-      navigator.share({ title: pageTitle, text: shareText, url: pageUrl }).catch(function(){});
-    };
-  }
-
-  var copyBtn = document.getElementById('pacdiShareCopy');
-  copyBtn.onclick = function(){
-    navigator.clipboard.writeText(pageUrl).then(function(){
-      var old = copyBtn.textContent;
-      copyBtn.textContent = '✓ Kopyalandı!';
-      setTimeout(function(){ copyBtn.textContent = old; }, 2000);
-    }).catch(function(){});
-  };
-})();
-</script>
-
-<div id="pacdi-fsek" style="clear:both;width:100%;flex-basis:100%;text-align:center;padding:28px 16px 20px;border-top:1px solid rgba(212,175,55,0.15);margin-top:32px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;box-sizing:border-box;">
-  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.25);border-radius:24px;padding:8px 20px;margin-bottom:12px;flex-wrap:wrap;justify-content:center;">
-    <span style="font-size:1rem;">🛡️</span>
-    <span style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;color:#D4AF37;text-transform:uppercase;">FSEK Registered · PACDI Framework</span>
-  </div>
-  <div style="font-size:0.78rem;color:#8A8F9A;margin-bottom:4px;">Operated by AskMeAI Teknoloji Ltd. Şti. (TR: 23837)</div>
-  <div style="font-size:0.72rem;color:#6B7280;margin-bottom:10px;">Intellectual property owned by © 2026 PACDI Global Yazılım Ltd. Şti. &mdash; FSEK No: <a href="https://pacdi.eu/legal.html" style="color:#D4AF37;text-decoration:none;">2026/18897</a></div>
-  <div style="font-size:0.82rem;font-style:italic;color:#6B7280;">&ldquo;Technology in the service of humanity.&rdquo;</div>
-</div>
 </body>
 </html>
